@@ -1,0 +1,96 @@
+@charset "utf-8 " ;
+h1 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 42px;
+
+}
+
+#wrapper {
+
+    position: relative;
+    height: 220px;
+    margin-top: 50px;
+
+    
+
+}
+#figure, p{
+    max-width: 100%;
+}
+#eka{
+    background-color: #A0D8EF;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    opacity: 0.5;
+    left: 50px;
+     top: -150px;
+     z-index: -2;
+     animation-name: juhalle;
+     animation-duration: 6s;
+     animation-fill-mode: forwards;
+
+}
+
+#toka {
+        background-color: #DBECB5;
+        opacity: 0.3;
+        position: absolute;
+        left: -100px;
+        top: 20px;
+        width: 100px;
+        height: 170px;
+        z-index: -1;
+        animation-name: juhalle2;
+        animation-duration: 6s;
+        animation-delay:6s;
+        animation-fill-mode: forwards;
+}
+
+#kolmas {
+
+    margin-top: 30px;
+    width: 360px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid #EE872A;
+    font-size: 120%;
+    z-index: 1;
+}
+
+#kappale1 {
+    letter-spacing: 12px;
+    font-size: 15px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+
+#kappale2 {
+    font-family: serif;
+    color: #40B3DF;
+    letter-spacing: 12px;
+    font-size: 15px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+
+}
+.magic {
+    background-color: #B4009E;
+    color: #ffffff;
+}
+/* Standard syntax eka ja toka animations */
+@keyframes juhalle {
+    from {top:-200px;}
+    to {top: 0px;}
+  }
+
+  @keyframes juhalle2 {
+    from {left:-110px;}
+    to {left: 100px;}
+  }

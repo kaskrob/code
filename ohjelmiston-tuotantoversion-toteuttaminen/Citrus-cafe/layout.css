@@ -1,0 +1,179 @@
+body {
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #638F45;
+	margin:10px;
+}
+#news time {
+	display: inline-block;
+	width: 3em;
+	
+}
+#logo h1 {
+	display: none;
+}
+#logo h2 {
+	display: none;
+}
+figure img {
+	max-width: 100%;	
+}
+.main-nav ul {
+	display: flex;
+	flex-direction: column;
+	}
+.main-nav ul > * {
+	flex-grow: 1;
+	flex-basis: 100%;
+}
+.main-nav ul li {
+	display:block;
+	text-align: center;
+	border: 1px solid #618a37;
+    border-radius: 8px;
+	padding: 1em;
+	background-color: #9FCC7B;
+	
+}
+.main-nav ul li a {
+	text-decoration: none;
+    color: white;
+}
+ 
+	
+
+article {
+	
+}
+footer {
+	color: white;
+} 
+footer a {
+	color: white;
+} 
+footer span {
+	float: right;
+} 
+footer .telephone {
+	color: black;
+}
+#specials {
+	background-color: #CCC9CD;
+	margin-bottom: 10px;
+	border: white solid 10px;
+	margin-bottom: 10px;
+}
+#vision {    
+	display: flex;
+	flex-direction: row;
+} 
+#vision section {
+	    flex-grow: 2;
+    flex-basis: 0px;
+} 
+#vision figure {
+	    flex-grow: 1;
+    flex-basis: 0px;
+    display: none;
+} 
+#vision p {
+	padding: 1em;
+    text-align: center;
+	background color: #E4DBC1;
+}
+#boxes h2 {
+    padding: 10px;	 
+	font-size: 1.2em;
+	border-bottom: white 10px solid;
+}
+#boxes span {
+float: right;
+}
+#news {	background-color: white;
+	border: white solid 10px;
+	margin-bottom: 10px;
+}
+#news h2 {background-color: lightgray;}
+#events {background-color: #CCC9CD;
+	border: white solid 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+	#vision figure {
+		display: block;
+		}
+#news time {
+	display: inline-block;
+	width: 3em;
+	
+}
+.main-nav ul li {
+	display:block;
+	text-align: center;
+	border: 1px solid #618a37;
+    border-radius: 8px;
+	padding: 1em;
+	background-color: #9ECB7A;
+}
+.main-nav ul li a {
+	text-decoration: none;
+    color: white;
+}
+ 
+	
+
+article {
+	
+}
+footer {
+}
+#specials {
+	background-color: #CCC9CD;
+	padding: 10px;
+	border: white solid 10px;
+}
+#vision {    
+	display: flex;
+	flex-direction: row;
+} 
+#vision section {
+	    flex-grow: 2;
+    flex-basis: 0px;
+} 
+#vision figure {
+	    flex-grow: 1;
+    flex-basis: 0px;
+    display: none;
+} 
+#vision p {
+	padding: 1em;
+    text-align: center;
+}
+#boxes h2 {
+	padding: 10px;
+	 font-size: 1.2em;
+	border-bottom: white 10px solid;
+}
+#boxes span {
+float: right;
+}
+#news {	background-color: white;
+	border: white solid 10px;
+}
+#news h2 {background-color: lightgray;}
+#events {background-color: #CCC9CD;
+	border: white solid 10px;
+}
+@media only screen and (min-width: 426px) {
+	.main-nav ul {
+    	flex-direction: row;
+	}
+ 
+}
+@media only screen and (min-width: 769px) {
+ 
+}

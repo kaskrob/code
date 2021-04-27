@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>nice-navigation</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Links</a></li>
+		<li><a href="#">Away</a></li>
+		<li><a href="#">Eric</a></li>
+		<li><a href="#">Kat</a></li>
+		<li></li>
+		<li>
+		  <pre><a href="#">Other</a></pre>
+		</li>
+	</ul>
+</nav>
+<article>
+  <h1>complexspiral demo</h1>
+  <pre>The page you are viewing right now exists to show off what can be accomplished with pure CSS1 and a little teeny piece of CSS2 (specifically, the hover effects on hyperlinks). Remember: as you look this demo over, there is no Javascript here, nor are any PNGs being used, nor do I employ any proprietary extensions to CSS or any other language. It's all done using straight W3C-recommended markup and styling, all validated, plus a total of four (4) images. Unfortunately, not every browser supports all of CSS1, and only those browsers which fully and completely support CSS1 will get this right. Despite some claims to the contrary, IE6/Win's rendering of this page is not correct, as it (as well as some other browsers) doesn't correctly support background-attachment: fixed for any element other than the body. That makes it impossible to pull off the intended effect. Other browsers may or may not get the effect right. </pre>
+  <p> Hands-on: Things to Examine </p>
+  <p>Before you start, make sure you're viewing this page in one of the browsers mentioned</p>
+  <p>The first, easiest thing to do is scroll the page vertically. Notice how the hyperlinks on the left side of the page slide over the background seamlessly, as does the main content area (this blue-backed box right here). The visual effect should be that the hyperlinks and the main content area have translucent backgrounds, but opaque foregrounds. They don't, in fact, but that's what it should look like.</p>
+  <p> above. Otherwise the descriptions to follow won't match what you see. Try changing the text size and notice how the compositing effect remains consistent. Then make your browser window really narrow and scroll horizontally. Again, everything should remain seamless and consistent. Try hovering over the left-hand links and you should see the background change. Scroll the page so it's not at its default, change the size of the text, and hover again. The &quot;compositing&quot; is still seamless as ever. No, I'm not using one or more semi-transparent PNGs for the link and content backgrounds, nor am I employing a half-screen GIF trick. The entire page is driven by one HTML document containing an embedded stylesheet and no Javascript, one external CSS file, and four JPG images.   What the Sam Scratch is goin' on here?!? Glad you asked. The effect demonstrated here is achieved by using fixed background images, nothing more. For example, the main-content area (the blue part here) uses the following styles for the default spiral-shell background: div#content {background: #468 url(shell-blue.jpg) 0 0 no-repeat fixed;} The above is equivalent to these styles: </p>
+  <pre>div#content {      background-color: #468;     background-image: url(shell-blue.jpg); The effect of these longer rules is exactly the same; they're just split out into individual background properties for more detailed consideration by you, gentle reader.  </pre>
+  <br>
+  <pre>     background-position: 0 0;     background-repeat: no-repeat;     background-attachment: fixed;</pre>
+  <pre>First, check out the blue-shell image found here: url(shell-blue.jpg). Then come back to this page and I'll continue with the explanation. All done? Great.  </pre>
+  <br>
+  <pre><br>  According to CSS, any background image that is "fixed" using background-attachment: fixed; is fixed with respect to the viewport-- not the element with which the image is associated. So I set the blue-shell background image to be aligned with the top left corner of the browser window (the viewport) with the values given for background-position. However, the image will only be visible wherever is intersects with the element to which it's been assigned. Therefore, even though the top left corner of the blue-shell image is aligned with the top left corner of the viewport, we can only see it wherever it intersects with a div that has an id with a value of content (which, again, happens to be the one containing this text).</pre>
+  <pre><br>  So I set a fixed background for the BODY, the content DIV, and the hyperlinks in both their normal and hovered states. (I also turned the hyperlinks into block-level elements, thus avoiding the need for tables or other cumbersome markup tricks.) In any given case of an element's display, we see whatever part of the associated background image intersects with the element. The rest of the background image remains hidden.</pre>
+  <p>&nbsp;</p>
+</article>
+	<footer>
+	
+	
+	
+	
+	</footer>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="xu-a compatible" content="ie edge">
+<meta name="viewport" content="width=device-width, initial scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<link href="reset.css" rel="stylesheet" type="text/css">
+<title>Fluid-grid</title>
+<style> 
+html  {
+	font-size: 62.5%;
+}
+body {
+	background-color: whitesmoke;
+	color: black;
+	margin: 0;
+	padding: 10px;
+	font-size: 100%;
+}
+.flex-mom {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex-mom section {
+	flex-basis: 0px;
+	flex-grow: 1;
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+	padding: 10px;
+}
+.flex-mom section:last-child {
+	margin-right:0;
+
+}
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+		h2 {
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+		p {
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+	}
+    .flex-mom2 {
+       display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    figure img {
+        max-width: 100%;
+    }
+    .flex-mom .tuplaleveys {
+        flex-grow: 2;
+    }
+    .two-columns {
+        display: flex;
+        flex-direction: row;
+    }
+ 
+</style>
+</head>
+
+<body>
+<!--sivu 1-->
+<article class="flex-mom">
+<section>
+	  <h1>three equal columms</h1>
+	<h2>ipsum quisquam neque et laudantium sequi velit dolores ex optio commodi mollitia.</h2>
+	  </section>
+</article>
+<article class="flex-mom">
+	<section> 
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nulla voluptate cupiditate unde, veniam, quae libero reprehenderit quaerat, voluptatem nobis voluptatum corporis. Nisi culpa sed ab ut quis. Cum error ea nihil animi quis quo natus eos commodi, repellat tenetur nostrum in ex officiis accusantium, praesentium voluptatem, laudantium quos a dolorem! Numquam est ut adipisci, nemo quam sapiente odio enim aspernatur quia assumenda maxime harum, totam asperiores. Nisi, quis. Fugit molestias earum, animi ipsa, ab iste praesentium asperiores hic excepturi corporis rem at nostrum quisquam eos voluptatum iusto a veniam fuga! Eligendi rem error accusamus neque nam expedita inventore porro?</p>	</section> 
+			<section> 
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugit, quibusdam eveniet totam sequi optio cum consequuntur. Minima unde soluta sed ipsam eveniet, ad veritatis, non assumenda accusantium laborum est? Amet incidunt cumque id mollitia, exercitationem illum commodi non vitae ea quam facilis maiores, quo minus a similique sapiente enim hic aliquid fugiat soluta perferendis ex esse dolorem? Aliquam vero, unde perspiciatis similique, quis dolorem non facilis, quos deleniti neque id optio! Nam dignissimos ex provident sit eligendi. Blanditiis alias suscipit beatae, velit illo architecto hic dolorum iste, est ducimus temporibus, placeat doloribus quisquam id! Consequatur veritatis perferendis beatae quaerat.</p> </section> 
+  <section> 
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ratione eius qui quas nesciunt voluptate dicta facere unde accusantium eaque, asperiores, eos quibusdam in perspiciatis. Dolorum dolorem minus, fuga cumque, harum accusantium et facere quis iste atque aliquam fugit ducimus nemo eaque suscipit id sequi dignissimos amet quidem culpa, facilis numquam! Sint illum vitae voluptatibus sit ratione perspiciatis incidunt, aliquid ipsam eos et ea eaque veniam sapiente cum dolore molestias inventore nostrum consectetur aspernatur animi ab, nesciunt expedita. Vero nihil suscipit sint quibusdam officiis alias, quo pariatur quod architecto! Iure quod dolores consequatur, tempore placeat, sapiente pariatur fugiat maxime ullam.</p>
+	</section>
+
+
+	</article>
+	<!--sivu 2-->
+<article class="flex-mom">
+    <section>
+        <h1>Three unequal columns</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos soluta minus adipisci deleniti numquam quo mollitia incidunt explicabo illum illo ducimus itaque, quia nostrum, ipsam autem est.</h2>
+    </section>
+    </article>
+    
+    <article class="flex-mom">
+        <section>
+            <figure><img src="images/skaalautuva-kuva.png" alt="Kolme palloa"/></figure>
+        </section>
+        <section class="tuplaleveys">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dicta beatae quisquam amet. Dignissimos optio explicabo, distinctio odio, iste quasi alias placeat mollitia doloribus. Omnis incidunt alias perspiciatis in! Reiciendis sint dolorum quam incidunt dolor deserunt, asperiores amet consequuntur optio sunt consectetur iusto facere! Asperiores molestias, voluptas. Magni, ducimus placeat!</p>
+        
+        </section>
+    </article>
+    <!--sivu 3-->
+    <article class="flex-mom">
+    <h1>Two columns</h1>
+    <h2>get two columns starting at desktops and scaling at large desktops</h2>
+        <section class="two-columns">            <figure><img src="images/skaalautuva-kuva.png" alt="Kolme palloa"/></figure>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam mollitia ullam ex id, quidem, vero deserunt officia natus unde hic fuga enim modi reprehenderit quos est. Reiciendis repellat quaerat architecto!</p>  <p>Repellendus rem, doloribus nobis nulla sunt, laudantium ut porro delectus ipsum nisi inventore culpa temporibus, necessitatibus mollitia eveniet nihil. Quae, at, quas sint ratione eligendi suscipit quibusdam asperiores obcaecati.</p></section>
+    </article>
+    <!--sivu 4-->
+    <h1>FULL WIDTH SINGLE COLUMN</h1>
+    <section>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita, illo aliquid odio? Eligendi quas, temporibus possimus ea cum et architecto nam. Aut, perspiciatis modi.
+    </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur, harum. Amet voluptas, velit, optio ipsa expedita, laudantium, sunt saepe aliquam quisquam fugiat nemo quis!</p>
+    </section>
+    <!--sivu 5-->
+    <h1>Two colums with two nested</h1>
+    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid porro officiis a odio eius tempore, expedita saepe sit! Fugiat non assumenda reiciendis veniam laudantium inventore libero tempore voluptates doloribus,</p> <p>delectus rem molestias saepe eaque, eligendi fugit nihil ipsum vel? Repudiandae harum, temporibus omnis provident. Dolore a non, delectus modi libero </p>?</section>
+  
+     <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quod perferendis excepturi illo, corporis dolor! Velit nihil quia repellendus, iste sit officiis alias unde harum tempora, blanditiis aut perferendis. Illo beatae odit, possimus necessitatibus ipsa ullam modi consequuntur quidem, iusto enim ratione quasi eos laudantium. Provident voluptatibus maiores, placeat nam.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae provident fugiat officia ipsam nobis corporis, nulla, repellat quisquam iure quod ipsa assumenda ut culpa tempore asperiores! Corporis repellat, deleniti eveniet, possimus mollitia laudantium inventore rerum voluptatem placeat qui voluptate esse facilis vel odio laboriosam cumque et reiciendis similique error commodi iusto voluptatum fuga. Ab ullam, id laborum velit, illo, dolorum eius facere eum nulla nam assumenda similique excepturi earum. Quisquam nostrum enim adipisci suscipit eius, esse voluptatum modi fugiat unde consectetur nam eos atque ipsum incidunt quaerat vel veniam autem iusto perferendis blanditiis dolore nobis. Quia, nostrum expedita placeat similique?</p></section>
+</body>
+</html>

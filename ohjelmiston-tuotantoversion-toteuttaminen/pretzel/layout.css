@@ -1,0 +1,37 @@
+body {
+    background-image: url(images/grunge.png);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: -80% 0px;
+    background-color: #fcfaf5;
+   
+}
+#special {
+    background-color: #5F8288;
+    color:white;
+    background-image: url(images/special-bg.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+#special p {
+    padding: 10px;
+}
+#special p span {
+    font-weight: bold;
+}
+#wrapper {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+   display: flex;
+  flex-direction: row;
+  justify-content: center
+  
+}
+#section main {
+    flex-wrap: wrap;
+
+}
+#aside sidebar{
+
+}

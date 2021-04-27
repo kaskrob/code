@@ -1,0 +1,98 @@
+@charset "utf-8";
+figure img {
+	max-width: 100%;
+}
+header {
+	background-color: #B9C826;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+footer {
+	background-color: #B9C826;
+}
+
+nav ul li {
+	display: inline;
+	padding-right: 7px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+}
+footer p {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.active {
+	background-color: #B9C826;
+	padding-top: 17px;
+	padding-bottom: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+nav {
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 10px;
+
+}
+nav a {
+	color: black;
+	text-decoration: none;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 2em;
+
+}
+figure {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+body {
+	font-size: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-width: 1250px;
+}
+h1 {
+	font-size: 1.5em;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+/*tablet säännöt
+@media screen and (min-width:426px) and (max-width:768px){
+}
+/*nämä säännöt voimassa tablet näkymässä*/
+body {
+	:color;red
+}
+
+
+
+/*desktop*/
+@media screen and (min-width:769px){
+	/*nämä säännöt voimassa isoilla näytöillä*/
+	.left{
+	width:50
+	Float:left;	
+	}
+	.right{ 
+	width: 50%;
+		float: right;
+	}
+	footer { 
+	clear: both;
+	}
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+}

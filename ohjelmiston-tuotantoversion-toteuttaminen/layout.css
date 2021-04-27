@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 85%;
+	font-family:Tahoma, geneva, sans serif ;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom:0px;
+	margin-left: auto;
+	font-size: 62.5%;
+	background-color: #FFF;
+	
+	}
+p{
+	font-size: 1.2em;
+padding-bottom:0.5em;
+}
+	
+
+h1 {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.6em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.4em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+#logo {
+	float: right;
+}
+header {
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-color: #01abdf;
+	border-style: solid;
+	border-left-width: thin;
+	border-right-width: thin;
+	border-top-width: thin;
+	overflow: auto;
+	
+}
+#opas {
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-left: thin solid #01abdf;
+	border-right: thin solid #01abdf;
+	border-bottom-color: #01abdf;
+	border-bottom-style: solid;
+	border-top: thin solid #f29400;
+	overflow: auto;
+	
+}
+footer {
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-left: thin solid #01abdf;
+	border-right: thin solid #01abdf;
+	border-bottom: thin solid #01abdf;
+	border-top: thin solid #f29400;
+	overflow: auto;
+	
+}
+.sisennys {
+	padding-left: 2em;
+}
+a:link {
+	text-decoration: none;
+	color: #333;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+figure img {
+	max-width: 100%;
+}
+figure {
+	width: 150px;
+}
+#opas p .sisennys {
+}

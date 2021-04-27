@@ -1,0 +1,110 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#skipto {
+    text-align: center;
+    display: none;
+}
+#wrapper {
+    width: 96%;
+    max-width: 1024px;
+}
+figure img { /* responsiiviest kuvat */
+    max-width: 100%;
+    width: 100%;
+}
+.parent3 { /* wrapper */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parent3 > * { /* banner ja maini */
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+.parent3 header { /* header */
+    flex-basis: 100%;
+}
+header h1 {
+    background-image: url(./images/demo.gif);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 160px;
+    height: 70px;
+}
+nav{
+
+}
+#main { /* main 2 ,  aside 1 */
+    flex-grow: 2;
+
+}
+.parent { /* nav */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.parent > * { /* h1 ul  */
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+.parent .start {
+
+}
+.parent .end { /* nav ul */
+    justify-content: flex-end;
+    flex-grow: 2;
+}
+.parent2 { /* nav ul vanhempui */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parent2 > * { /* li */
+    flex-basis: 0px;
+    padding: 5px 10px;
+}
+@media only screen and (max-width: 480px) {
+    #skipto {
+        display: block;
+        background-color: #FBFBFB;
+    }
+    .parent .start {
+        flex-basis: 100%;
+    }
+    .parent .end {
+        justify-content: center;
+    }
+    .parent .end li {
+        background-color: #FBFBFB;
+        margin-bottom: 2px;
+    }
+    .parent2 > * {
+        flex-basis: 100%;
+        text-align: center;
+    } 
+    #wrapper {
+        width: 100%;
+    }
+    .parent3 > * {
+        flex-basis: 100%;
+     
+    }
+}
